@@ -1,0 +1,150 @@
+.footer {
+  background: #2c3e50;
+  /* hijau */
+  color: white;
+  padding: 60px 40px 30px;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 kolom */
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.footerSection h3,
+.footerSection h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.3rem;
+  display: inline-block;
+}
+
+.footerSection p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 0.6rem;
+  color: white;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  /* sejajarkan icon ke atas teks */
+  margin-bottom: 0.8rem;
+  gap: 10px;
+}
+
+.contactIcon {
+  flex-shrink: 0;
+  /* cegah ikon ikut melar */
+  width: 28px;
+  /* lebih kecil biar nggak ganggu */
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  color: #009846;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  /* ikon lebih proporsional */
+  margin-top: 3px;
+  /* biar posisinya pas dengan teks */
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  color: #009846;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background: #f1f1f1;
+  transform: translateY(-3px);
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footerBottom a {
+  color: white;
+  font-weight: bold;
+}
+
+.footerBottom a:hover {
+  text-decoration: underline;
+}
+
+/* Tombol Back to Top */
+.backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #009846;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.backToTop:hover {
+  background: #007a39;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footerContent {
+    grid-template-columns: repeat(2, 1fr);
+    /* tablet 2 kolom */
+  }
+}
+
+@media (max-width: 600px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    /* hp 1 kolom */
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}

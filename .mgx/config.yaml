@@ -1,0 +1,4 @@
+build: npm run build
+build_path: null
+dev: npm run dev
+install: npm install
